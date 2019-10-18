@@ -29,7 +29,7 @@ export default new Vuex.Store({
     addToDo(state, todo) {
       state.todos = [...state.todos, {...todo, done: false, id: state.todos.length+1}];},
     deleteToDo(state, todo) {
-       console.log("hi");
+       state.todos.pop(todo);
     },
     checkOff(state, todo) {
        state.todo[todos].done = true;
